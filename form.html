@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Contato | Sistemas para Internet</title>
+</head>
+<body>
+
+    <h1>Formulário de Contato</h1>
+
+    <p><a href="index.html">Home</a> | <a href="lucaspontual.html">Lucas Pontual</a> | <a href="renanewbank.html">Renan Ewbank</a> | <a href="tabela.html">Tabela de curiosidades</a> | <a href="Sites.html">Sites Favoritos</a> | Contato | <a href="cred.html">Créditos</a>
+    </p>
+
+    <h2>Preencha o formulário abaixo para enviar uma mensagem a nossa equipe de atendimento.</h2>
+
+        <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php">
+        <p>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome" size="35" maxlength="35">
+        </p> 
+
+        <p>
+            <label for="email">E-mail</label><br> 
+            <input type="email" name="email" id="email" size="35" maxlength="50">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone</label><br>
+            <input type="tel" name="telefone" id="telefone" size="12" maxlength="12">
+        </p>
+
+        <p>
+            <label for="motivo-contato">Motivo do contato</label><br>
+
+            <select name="motivo-contato" id="motivo-contato">
+
+                <option value="">Selecione</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="informacao">Informação</option>
+                <option value="elogio">Elogio</option>
+                <option value="solicitacao">Solicitação</option>
+                <option value="reclamacao">Reclamação</option>
+
+            </select>
+
+            <p>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="mensagem" id="mensagem" rows="8" cols="60"></textarea> 
+            </p>
+
+        <fieldset>
+            <legend>Aceito ser contatado via:</legend>
+
+            <input type="checkbox" name="aceita-contato[]" value="whatsapp" id="aceita-contato-whatsapp">
+            <label for="aceita-contato-whatsapp">WhatsApp</label><br>
+
+            <input type="checkbox" name="aceita-contato[]" value="email" id="aceita-contato-e-mail">
+            <label for="aceita-contato-e-mail">E-mail</label><br>
+
+            <input type="checkbox" name="aceita-contato[]" value="telefone" id="aceita-contato-telefone">
+            <label for="aceita-contato-telefone">Telefone</label>
+
+        </fieldset><br>
+
+        <button type="submit">Enviar</button>
+
+        </form>
+
+
+</body>
+</html>
